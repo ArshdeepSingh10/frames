@@ -1,7 +1,8 @@
 window.CONFIG={
-  API_URL:'PASTE_WEB_APP_URL_HERE',
-  CLOUD_NAME:'PASTE_CLOUDINARY_CLOUD_NAME',
-  UPLOAD_PRESET:'PASTE_UNSIGNED_PRESET_NAME',
+  API_URL:'https://script.google.com/macros/s/AKfycbwWPW1PTCwcwCh0IXgmLGZ62zYTKRRufz1KUQDLXBm_5SVq3l0AEThObWG2HC53o3f9/exec',
+  CLOUD_NAME:'dh1bbfjn1',
+  UPLOAD_PRESET:'catalog',
+  
   SHOP_NAME:'Frame Garage',
   CURRENCY:'₹',
   // Messages the admin sends to customers with one tap. Fields: {name} {id} {frame} {total}
