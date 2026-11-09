@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101114"><title>Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<div id="login" class="box"><h2>Admin login</h2><small>Enter the admin password to manage orders and slots.</small><input id="pw" type="password" placeholder="Password" autocomplete="current-password"><button id="lb" class="btn">Log in</button><p id="le" class="er" style="margin:0"></p></div>
+<div id="app" hidden><header><div class="w hd"><b class="logo" id="sn"></b><button class="btn alt" id="lo">Log out</button></div></header>
+<div class="w"><div class="tabs"><button class="tab on" id="t1">Orders <b id="pn" hidden>0</b></button><button class="tab" id="t2">Frames &amp; slots</button></div>
+<div id="vo"><div id="bf"></div><div id="ol" class="bl"></div></div>
+<div id="vf" hidden><div class="row" style="padding:12px 0"><button class="btn" id="addf">+ Add frame</button></div><div id="fl" class="bl"></div></div></div></div>
+<dialog id="fm"></dialog><dialog id="cf"></dialog><div id="tl" hidden></div><div id="ts" hidden></div>
+<script src="config.js"></script><script src="admin.js"></script></body></html>
