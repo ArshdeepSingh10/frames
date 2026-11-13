@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101114"><title>Design Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="w hd"><b class="logo" id="sn"></b><a class="btn alt" id="bk" href="index.html">Back</a></div></header>
+<main class="w studio"><section><div id="stage"></div><div class="tools" id="tools"><div class="row"><label>Rotate <input id="rot" type="range" min="-180" max="180" step="1" value="0"></label><label>Size <input id="siz" type="range" min="5" max="200" step="1" value="50"></label></div>
+<div class="row"><button class="btn alt" data-t="fw">Bring forward</button><button class="btn alt" data-t="bw">Send back</button><button class="btn alt" data-t="dup">Duplicate</button><button class="btn red" data-t="del">Remove</button></div><small class="mu" id="hint">Tap a layer to select it. Drag to move, use the round handles to resize and rotate.</small></div></section>
+<aside class="side"><div class="chs" id="tabs"></div><div id="panel"></div></aside></main>
+<div class="bar"><button class="btn" id="done">Preview &amp; order</button></div><dialog id="od"></dialog>
+<script src="config.js"></script><script src="lib.js"></script><script src="studio.js"></script></body></html>
