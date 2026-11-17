@@ -1,4 +1,4 @@
-const C=CONFIG,$=s=>document.querySelector(s),tok=()=>sessionStorage.tok,OKURL=/^https:\/\/res\.cloudinary\.com\//;
+const C=CONFIG,$=s=>document.querySelector(s),tok=()=>{try{return sessionStorage.tok;}catch(e){return '';}},OKURL=/^https:\/\/res\.cloudinary\.com\//;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),money=n=>C.CURRENCY+Number(n).toLocaleString('en-IN');
 const thumb=(u,w)=>u.replace('/upload/','/upload/f_auto,q_auto,w_'+w+'/'),big=u=>u.replace('/upload/','/upload/q_auto,w_2400,c_limit/');
 async function get(q=''){const ctl=new AbortController(),tm=setTimeout(()=>ctl.abort(),15000);try{const r=await fetch(C.API_URL+'?'+q+'&_='+Date.now(),{signal:ctl.signal}),j=await r.json();if(!j.ok)throw new Error(j.error||'Request failed');return j.data;}finally{clearTimeout(tm);}}
